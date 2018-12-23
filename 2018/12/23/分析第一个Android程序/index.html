@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>分析第一个Android程序 | Sanstyle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;There is no description of the installation, configuration, and operation of Android Studio. If you need it, please visit Baidu or Google. I will directly analyze the project s">
+<meta name="keywords" content="Android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分析第一个Android程序">
+<meta property="og:url" content="http://www.sunstady.xyz/2018/12/23/分析第一个Android程序/index.html">
+<meta property="og:site_name" content="Sanstyle">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;There is no description of the installation, configuration, and operation of Android Studio. If you need it, please visit Baidu or Google. I will directly analyze the project s">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/1.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/2.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/3.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/4.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/5.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/6.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/7.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/8.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/9.png?raw=true">
+<meta property="og:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/10.png?raw=true">
+<meta property="og:updated_time" content="2018-12-23T07:56:23.564Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="分析第一个Android程序">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;There is no description of the installation, configuration, and operation of Android Studio. If you need it, please visit Baidu or Google. I will directly analyze the project s">
+<meta name="twitter:image" content="https://github.com/sunstady/hexoFirst/blob/master/First_android/1.png?raw=true">
+  
+    <link rel="alternate" href="/atom.xml" title="Sanstyle" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://github.com/sunstady/hexoFirst/blob/master/blog_bg/1.png?raw=true">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://github.com/sunstady/hexo/blob/master/images/2017.jpg?raw=true">
+    <h2 class="author">时三</h2>
+    <h3 class="description">我善良,并不代表我不邪恶.</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>2</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>1</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+          <a href="/about" title="关于">
+            <li>关于</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-分析第一个Android程序" class="wow slideInRight article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/23/分析第一个Android程序/" class="article-date">
+  <time class="post-time" datetime="2018-12-23T07:51:25.000Z" itemprop="datePublished">
+    <span class="post-month">12月</span><br>
+    <span class="post-day">23</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      分析第一个Android程序
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Android/">Android</a>
+  </div>
+
+          
+              
+  &nbsp; | &nbsp;
+  <div class="view-box">
+    <span id="/2018/12/23/分析第一个Android程序/" class="leancloud_visitors" data-flag-title="分析第一个Android程序">
+      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
+    </span>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;There is no description of the installation, configuration, and operation of Android Studio. If you need it, please visit Baidu or Google. I will directly analyze the project structure of <code>Android</code>, taking the default project as an example.</p>
+<a id="more"></a>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Go back to <code>Android Studio</code>, first expand the <code>HellpoWorld</code> project, you will see the project structure shown below.<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/1.png?raw=true" alt="1"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Any new project will default to the <code>Android</code> project structure, but this is not the actual directory structure of the project, but was converted by <code>Android Studio</code>. The project is simple and straightforward, suitable for rapid development, but may not be easy for newcomers like me. Click the <code>Android</code> area in the figure to convert the project structure mode.<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/2.png?raw=true" alt="2"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Here we switch the project structure mode to project, which is the real directory structure of the project.<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/3.png?raw=true" alt="3"></p>
+<h2 id="Outer-directory"><a href="#Outer-directory" class="headerlink" title="Outer directory"></a>Outer directory</h2><h3 id="gradle-and-idea"><a href="#gradle-and-idea" class="headerlink" title=".gradle and .idea"></a>.gradle and .idea</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;These two directories contain some files automatically generated by <code>Android Studio</code>. We don’t need to care, and don’t edit them manually.</p>
+<h3 id="app"><a href="#app" class="headerlink" title="app"></a>app</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;The code, resources, and other content in the project are stored almost entirely in this directory, and our next development work is basically performed in this directory.</p>
+<h3 id="build"><a href="#build" class="headerlink" title="build"></a>build</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This directory does not need to be too concerned, it mainly contains some files that are automatically generated at compile time.</p>
+<h3 id="gradle"><a href="#gradle" class="headerlink" title="gradle"></a>gradle</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This directory contains the <code>gradle wrapper</code> configuration file. The <code>gradle wrapper</code> method does not need to download the <code>gradle</code> in advance, but will automatically decide whether to download the <code>gradle</code> based on the local cache. <code>Android Studio</code> does not have the <code>gradle wrapper</code> method enabled by default. If you need to open it, you can click the <code>Android Studio</code> navigation bar -&gt; <code>File</code> -&gt; <code>Settings</code> -&gt; <code>Build, Execution, Deployment</code> -&gt; <code>Gradle</code> to configure the replacement.</p>
+<h3 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This file is used to exclude specified directories or files from version control.</p>
+<h3 id="build-gradle"><a href="#build-gradle" class="headerlink" title="build.gradle"></a>build.gradle</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This is the project’s global <code>gradle</code> build script, usually the contents of this file do not need to be modified.</p>
+<h3 id="gradle-properties"><a href="#gradle-properties" class="headerlink" title="gradle.properties"></a>gradle.properties</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This file is a global <code>gradle</code> configuration file, and the properties configured here will affect all <code>gradle</code> compilation scripts in the project.</p>
+<h3 id="gradlew-and-gradlew-bat"><a href="#gradlew-and-gradlew-bat" class="headerlink" title="gradlew and gradlew.bat"></a>gradlew and gradlew.bat</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;These two files are used to execute the <code>gradle</code> command in the command line interface, where <code>gradlew</code> is used on <code>Linux</code> or <code>Mac</code> systems, and <code>gradlew.bat</code> is used on <code>Windows</code> systems.</p>
+<h3 id="HelloWorld-iml"><a href="#HelloWorld-iml" class="headerlink" title="HelloWorld.iml"></a>HelloWorld.iml</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;The <code>iml</code> file is a file that is automatically generated by all <code>InteliJ IDEA</code> projects (<code>Android Studio</code> is based on <code>IntelliJ IDEA</code>), which is used to identify this is an <code>IntelliJ IDEA</code> project, we do not need to modify anything in this file.</p>
+<h3 id="local-properties"><a href="#local-properties" class="headerlink" title="local.properties"></a>local.properties</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This file is used to specify the <code>Android SDK</code> path in this machine. Usually the content is automatically generated, we do not need to modify it. Unless the location of the <code>Android SDK</code> in your machine changes, change the path in this file to a new location.</p>
+<h3 id="settings-gradle"><a href="#settings-gradle" class="headerlink" title="settings.gradle"></a>settings.gradle</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This file is used to specify all imported modules in the project. Since the <code>HelloWorld</code> project has only one <code>app</code> module, only the <code>app</code> module is introduced in the file. Usually, the introduction of modules is done automatically, and the scenes that require us to manually modify this file may be less.<br>&nbsp;&nbsp;&nbsp;&nbsp;The outer directory structure of the entire project is now complete. You will find that most files and directories are automatically generated in addition to the <code>app</code> directory, and we don’t need to modify them.</p>
+<h2 id="App-directory"><a href="#App-directory" class="headerlink" title="App directory"></a>App directory</h2><p><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/4.png?raw=true" alt="4"></p>
+<h3 id="build-1"><a href="#build-1" class="headerlink" title="build"></a>build</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This directory is similar to the outer <code>build</code> directory, and mainly contains some files that are automatically generated at compile time. However, the content inside it will be more complicated, we don’t need too much care.</p>
+<h3 id="libs"><a href="#libs" class="headerlink" title="libs"></a>libs</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;If you use a third-party <code>jar</code> package in your project, you need to put these jars in the <code>libs</code> directory. The jars placed in this directory will be automatically added to the build path.</p>
+<h3 id="androidTest"><a href="#androidTest" class="headerlink" title="androidTest"></a>androidTest</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This is used to write <code>Android Test</code> test cases, you can do some automated testing of the project.</p>
+<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;There is no doubt that the <code>java</code> directory is where all our Java code is stored. Expand the directory and you will see the <code>HelloWorldActivity</code> file we just created.</p>
+<h3 id="res"><a href="#res" class="headerlink" title="res"></a>res</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;There is a lot of content in this directory. To put it simply, all the images, layouts, strings, and other resources that you use in your project should be stored in this directory. Of course, there are many subdirectories under this directory. The images are placed in the <code>drawable</code> directory, the layout is placed in the <code>layout</code> directory, and the strings are placed in the <code>values</code> directory.</p>
+<h3 id="AndroidManifest-xml"><a href="#AndroidManifest-xml" class="headerlink" title="AndroidManifest.xml"></a>AndroidManifest.xml</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This is the configuration file for your entire <code>Android</code> project. All four components you define in the program need to be registered in this file. You can also add a permission declaration to the application in this file.</p>
+<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;Here is another way to write a <code>Unit Test test</code> case for automated testing of a project.</p>
+<h3 id="gitignore-1"><a href="#gitignore-1" class="headerlink" title=".gitignore"></a>.gitignore</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This file is used to exclude specified directories or files within the <code>app</code> module from version control, similar to the outer <code>.gitignore</code> file.</p>
+<h3 id="app-iml"><a href="#app-iml" class="headerlink" title="app.iml"></a>app.iml</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;The files generated automatically by the <code>IntelliJ IDEA</code> project, we do not need to care about or modify the contents of this file.</p>
+<h3 id="build-gradle-1"><a href="#build-gradle-1" class="headerlink" title="build.gradle"></a>build.gradle</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This is the <code>gradle</code> build script for the <code>app</code> module, which specifies a number of project build related configurations.</p>
+<h3 id="proguard-rules-pro"><a href="#proguard-rules-pro" class="headerlink" title="proguard-rules.pro"></a>proguard-rules.pro</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;This file is used to specify the obfuscation rules of the project code. When the code is developed, it is marked as an installation package file. If you do not want the code to be cracked by others, the code will usually be confused, making it difficult for the cracker to read.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;So the directory structure of the entire project is finished.</p>
+<h2 id="Analyze-project-operation"><a href="#Analyze-project-operation" class="headerlink" title="Analyze project operation"></a>Analyze project operation</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Next, analyze how the HelloWorld project works.<br>&nbsp;&nbsp;&nbsp;&nbsp;First open the <code>Android_Manifest.xml</code> file, you can find the following code:<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/5.png?raw=true" alt="5"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;This code indicates that the <code>HelloWorldActivity</code> activity is registered, and activities that are not registered in AndroidManifest.xml are not available. The two lines of code in the <code>intent-filter</code> are very important, indicating that <code>HelloWorldActivity</code> is the main activity of the project. Click on the application icon on the phone, the first activity is started.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Activities are the facade of the Android app, and everything you see in the app is in the activity. Therefore, the interface seen in the figure below is actually the activity of <code>HelloWorldActivity</code>.<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/6.png?raw=true" alt="6"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Take a look at its code and open <code>HelloWorldActivity.java</code> with the code as shown below.<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/7.png?raw=true" alt="7"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;First of all, we can see that <code>HelloWorldActivity</code> is inherited from <code>AppCompatActivity</code>, which is a backward compatible <code>Activity</code>, which can be compatible with <code>Android 2.1</code> system with the added features and functions of <code>Activity</code> in each system version. <code>Activity</code> is an activity base class provided by the <code>Android</code> system. All activities in our project must inherit it or its subclasses to have the characteristics of the activity (<code>AppCompatActivity</code> is a subclass of <code>Activity</code>). Then you can see that there is an <code>onCreate()</code> method in <code>HelloWorldActivity</code>. This method is a method that must be executed when an activity is created. There are only two lines of code and there is no <code>Hello World!</code>. So where is <code>Hello World!</code> defined?</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In fact, the design of the <code>Android</code> program is about logic and view separation. Therefore, it is not recommended to write the interface directly in the activity. A more general approach is to write the interface in the layout file and then introduce it in the activity. As you can see, the <code>setContenView()</code> method is called on the second line of the onCreate() method. This method introduces a <code>hello_world_layout</code> layout for the current activity, and <code>Hello World!</code> must be defined here!</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;The layout files are all defined in the <code>res/layout</code> directory. When you expand the <code>layout</code> directory, you will see the <code>hello_world_layout.xml</code> file. Open the file and switch to the <code>Text</code> view, the code is as follows:<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/8.png?raw=true" alt="8"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;So we have analyzed the directory structure of the <code>HelloWorld</code> project and the basic execution process.</p>
+<h2 id="Explain-the-resources-in-the-project"><a href="#Explain-the-resources-in-the-project" class="headerlink" title="Explain the resources in the project"></a>Explain the resources in the project</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;If you look at the <code>res</code> directory, there are still quite a lot of things inside, so it’s easy to see people dazzled.<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/9.png?raw=true" alt="9"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;All folders starting with <code>drawable</code> are used to put images. All folders starting with <code>mipmap</code> are used to put application icons. All folders starting with <code>values</code> are used to put strings, colors, styles, etc. Configured, the <code>layout</code> folder is used to put layout files.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;The reason why there are so many folders starting with <code>minmap</code> is actually to make the program more compatible with various devices. The same is true for the <code>rawable</code> folder.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Know the meaning of each folder in the res directory, let’s see how to use these resources. Open the <code>res/values/strings.xml</code> file:<br><img src="https://github.com/sunstady/hexoFirst/blob/master/First_android/10.png?raw=true" alt="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;As you can see, here is a string that defines an application name. We have two ways to reference it.</p>
+<ul>
+<li>A reference to the string can be obtained from the code via R.string.app_name.</li>
+<li>A reference to the string can be obtained in @xml/app_name in XML</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;The basic syntax is the above two ways, where the <code>string</code> part is replaceable. Here’s a simple example to help understand, open the AndroidManifest.xml file and find the following code:<br><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;application</span><br><span class="line">    android:allowBackup=<span class="string">"true"</span></span><br><span class="line">    android:icon=<span class="string">"@mipmap/ic_launcher"</span></span><br><span class="line">    android:label=<span class="string">"@string/app_name"</span></span><br><span class="line">    android:roundIcon=<span class="string">"@mipmap/ic_launcher_round"</span></span><br><span class="line">    android:supportsRtl=<span class="string">"true"</span></span><br><span class="line">    android:theme=<span class="string">"@style/AppTheme"</span>&gt;</span><br><span class="line">    ...</span><br><span class="line">&lt;<span class="regexp">/application&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Among them, the application icon of the <code>HelloWorld</code> project is specified by the <code>android:icon</code> attribute, and the name of the application is specified by the <code>android:label</code> attribute. As you can see, the way resources are referenced here is exactly what we just learned to reference resources in <code>XML</code>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.sunstady.xyz/2018/12/23/分析第一个Android程序/" data-id="cjq0lmocr0004cuprtszdcg12" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/12/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">Sanstyle</h1>
+    <h2 class="blog-subtitle"></h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+          <a href="/about" title="关于">
+            <li>关于</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://github.com/sunstady/hexo/blob/master/images/2017.jpg?raw=true">
+    <h2 class="author">时三</h2>
+    <h3 class="description">我善良,并不代表我不邪恶.</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>2</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>1</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://github.com/sunstady" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://sanstylemc.cn/" target="_blank" title="Sanstyle">
+          Sanstyle
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2017 - 2018 时三<br>
+      由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
+      主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana">Shana</a>
+      
+    </div>
+    
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/schedule" title="" class="menuItem">日程表</a>
+          
+            <a href="/xxxxxxx" title="" class="menuItem">搜索</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("i7jzN6yAlCyc52D54nDFzeXb-gzGzoHsz", "JKAIt4j5SoPJyHMx4IphgTdI");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.article-title').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+
+  </div>
+</body>
+</html>
