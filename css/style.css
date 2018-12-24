@@ -1917,9 +1917,10 @@ a.article-title:hover {
   line-height: 22.400000000000002px;
 }
 code {
-  color: #9ac9c4;
+  color: #9f79ee;
   background: #fbf7f8;
   margin: 2px;
+  border-radius: 5px;
 }
 .highlight,
 pre {
